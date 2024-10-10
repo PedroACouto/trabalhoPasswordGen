@@ -1,4 +1,12 @@
 /* Estilos gerais */
+:root {
+	--branco: white;
+	--cor-de-fundo: #00162E;
+	--fundo-senha: #00244D;
+	--fundo-texto: #001E40;
+	--borda: #0075FF;
+}
+
 body {
 	font-family: Arial, sans-serif;
 	background-color: #102040;
@@ -14,7 +22,7 @@ body {
 	background-color: #192a56;
 	padding: 30px;
 	border-radius: 10px;
-	width: 350px;
+	width: 650px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -38,8 +46,8 @@ h1::before {
 	border-radius: 5px;
 	margin-bottom: 20px;
 	font-size: 16px;
-	background-color: #fff;
-	color: #333;
+	background-color: var(--fundo-senha);
+	color: #FFF;
 }
 
 .password-settings h2 {
@@ -60,7 +68,7 @@ h1::before {
 }
 
 .length-control button {
-	background-color: #0056b3;
+	background-color: var(--borda);
 	color: #fff;
 	border: none;
 	padding: 5px 10px;
