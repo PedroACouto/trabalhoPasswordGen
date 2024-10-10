@@ -13,12 +13,10 @@ const strengthIndicator = document.getElementById("strength-indicator");
 
 let passwordLength = 12;
 
-// Atualiza a exibição do comprimento
 const updateLength = () => {
     lengthDisplay.textContent = passwordLength;
 };
 
-// Aumenta ou diminui o comprimento da senha
 decreaseButton.addEventListener("click", () => {
     if (passwordLength > 1) {
         passwordLength--;
@@ -31,7 +29,6 @@ increaseButton.addEventListener("click", () => {
     updateLength();
 });
 
-// Gera uma senha aleatória
 generateButton.addEventListener("click", () => {
     const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const lowercase = "abcdefghijklmnopqrstuvwxyz";
@@ -52,11 +49,9 @@ generateButton.addEventListener("click", () => {
 
     passwordInput.value = password;
 
-    // Calcula a força da senha
     calculateStrength(password);
 });
 
-// Função para calcular a força da senha
 const calculateStrength = (password) => {
     let strength = 0;
 
