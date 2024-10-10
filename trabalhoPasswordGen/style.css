@@ -1,0 +1,104 @@
+/* Estilos gerais */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #102040;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.container {
+	background-color: #192a56;
+	padding: 30px;
+	border-radius: 10px;
+	width: 350px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1::before {
+	content: '🔒';
+	margin-right: 10px;
+}
+
+.password-output input {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	background-color: #fff;
+	color: #333;
+}
+
+.password-settings h2 {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.length-control {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.length-control div {
+	display: flex;
+	align-items: center;
+}
+
+.length-control button {
+	background-color: #0056b3;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	margin: 0 5px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.checkbox-group {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.checkbox-group input {
+	margin-right: 10px;
+}
+
+.strength {
+	margin-top: 20px;
+}
+
+#strength-indicator {
+	font-size: 16px;
+	color: #ffbf00;
+}
+
+#generate {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#generate:hover {
+	background-color: #0056b3;
+}
