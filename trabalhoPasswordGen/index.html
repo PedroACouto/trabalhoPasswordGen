@@ -7,53 +7,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <img src="unlock.svg">
+    <h1>Gerador de senhas</h1>
+    <p>Gere instantaneamente uma senha aleatória e segura</p>
+    <div class="password-output">
+        <input type="text" id="senha" placeholder="Senha" readonly>
+        <div class="line"></div>
+    </div>
     <div class="container">
-        <h1> Gerador de senhas</h1>
-        <p>Gere instantaneamente uma senha aleatória e segura</p>
 
-        <div class="password-output">
-            <input type="text" id="senha" placeholder="Senha" readonly>
-        </div>
-
-        <div class="password-settings">
+        <div class="left">
             <h2>Personalize sua senha</h2>
-
-            <div class="length-control">
-                <label for="length">Número de caracteres</label>
-                <div>
+            <label for="length">Número de caracteres</label>
+            <div class="buttons">
+                <div class="length-control">
                     <button id="decrease">-</button>
                     <span id="length">12</span>
                     <button id="increase">+</button>
                 </div>
             </div>
-
-            <div class="checkbox-group">
-                <input type="checkbox" id="uppercase" checked>
-                <label for="uppercase">Letras maiúsculas</label>
+        </div>
+        <div class="middle">
+            <div class="password-settings">
+    
+                <h2>Características da senha</h2>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="uppercase" checked>
+                    <label for="uppercase">Letras maiúsculas</label>
+                </div>
+    
+                <div class="checkbox-group">
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">Letras minúsculas</label>
+                </div>
+    
+                <div class="checkbox-group">
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">Números</label>
+                </div>
+    
+                <div class="checkbox-group">
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols">Símbolos</label>
+                </div>
+    
+                
             </div>
-
-            <div class="checkbox-group">
-                <input type="checkbox" id="lowercase">
-                <label for="lowercase">Letras minúsculas</label>
-            </div>
-
-            <div class="checkbox-group">
-                <input type="checkbox" id="numbers">
-                <label for="numbers">Números</label>
-            </div>
-
-            <div class="checkbox-group">
-                <input type="checkbox" id="symbols">
-                <label for="symbols">Símbolos</label>
-            </div>
-
+        </div>
+        <div class="right">
             <div class="strength">
                 <h2>Força da senha</h2>
                 <p id="strength-indicator">Fraca</p>
             </div>
-
             <button id="generate">Gerar senha</button>
         </div>
+
     </div>
 
     <script src="main.js"></script>
